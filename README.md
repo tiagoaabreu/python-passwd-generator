@@ -3,9 +3,9 @@
 ---
 
 ### 🎯 Objetivo
-- Gerar senha colocando: numero, letras maiusculas e minusculas, pontuação(pendente essa ultima parte)
-- Dar opção ao usuario escolher a quantidade de caracteres para a senha
-- Disponibilizar uma forma de exportar a senha criada, e listar as senhas(Pendente)
+- [x]  Gerar senha colocando: numero, letras maiusculas e minusculas e pontuação.
+- [ ]Dar opção ao usuario escolher a quantidade de caracteres para a senha
+- [ ]Disponibilizar uma forma de exportar a senha criada, e listar as senhas(Pendente)
 
 --- 
 
