@@ -5,7 +5,10 @@ import sys
 
 
 def gerar_senha(tamanho):
-    char = string.ascii_letters + string.digits + string.ascii_uppercase
+    char = string.ascii_letters + string.digits + string.punctuation
+    words = r"|\/?~^{}[]´`';:.,<>()"
+    table = str.maketrans("", "", words)
+    char = char.translate(table)
     return "".join(secrets.choice(char) for _ in range(tamanho))
 
 
@@ -31,7 +34,7 @@ def main():
         if saida != "Y":
             print("Desligando...")
         else:
-            print("imprimindo...")
+            print("Imprimindo...")
             with open("senhas.txt", "w") as f:
                 sys.stdout = f
                 print(senha)
